@@ -1,1 +1,318 @@
-@import "global"
+@import "global";
+@import "fonts";
+@import "vars";
+
+
+
+.header{
+    
+    
+    &__top-inner{
+        height: 63px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__slogan{
+        font-size: 15px;
+        line-height: 18px;
+        color: $grey;
+        max-width: 220px;
+    }
+    &__top-link{
+        display: flex;
+        align-items: center; 
+    }
+    &__btn{
+        font-size: 16px;
+        line-height: 31px;
+        text-align: center;
+        padding: 7px 36px;
+        margin-right: 64px;
+    }
+    &__phone{
+        text-align: right;
+        font-size: 23px;
+        line-height: 23px;
+        font-weight: 700;
+        font-family: "GraphikLCG-Bold";
+        span{
+            font-size: 12px;
+            line-height: 12px;
+            margin-bottom: 3px;
+            display: block;
+            color: $grey;
+            font-family: "GraphikLCG-Regular";
+            font-weight: 400;
+        }
+    }
+}
+.menu{
+    background-color: #EFF0F1;
+    &__list{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 50px;
+        a{
+            line-height: 20px;
+            color: $blue;
+        }
+    }
+}
+.baner{
+    min-height: 375px;
+    margin-bottom: 50px;
+    &__title{
+        font-size: 45px;
+        line-height: 54px;
+        font-family: "GraphikLCG-Bold";
+        font-weight: 700;
+        max-width: 527px;
+        padding-top: 60px;
+        span{
+            padding-top: 48px;
+            font-size: 30px;
+            line-height: 36px;
+            font-family: "GraphikLCG-Regular";
+            display: block;
+            font-weight: 400;
+        }
+    }
+}
+.price{
+
+    &__title{
+        position: relative;
+        display: inline-block;
+        padding-right: 35px;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/arrow-right.svg');
+            width: 15px;
+            height: 26px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__date{
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey;
+        margin-bottom: 30px;
+    }
+    &__list{
+        column-count: 2;
+        column-gap: 60px;
+        margin-bottom: 50px;
+    }
+    &__line{
+        max-width: 451px ;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__name{
+        padding-right: 20px;
+        flex: 1 0 auto;
+    }
+    &__dots{
+        flex: 0 1 auto;
+        overflow: 'hidden';
+        
+        &::before{
+            display: block;
+            height: 1em;
+            overflow: hidden;
+            text-overflow: clip;
+            letter-spacing: -2px;
+            content: 
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . ";
+            color: $grey;
+        }
+    }
+    &__number{
+        padding-left: 15px;
+        flex: 1 0 auto;
+        
+        font-weight: 700;
+    }
+    &__box{
+        text-align: center;
+    }
+    &__btn{
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+        padding: 16px 57px 14px;       
+    }
+
+}
+
+.product{
+    &__inner{
+        padding-top: 60px;
+    }
+    &__title{
+        position: relative;
+        display: inline-block;
+        padding-right: 35px;
+        margin-bottom: 23px;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/arrow-right.svg');
+            width: 15px;
+            height: 26px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    &__item{
+        width: 480px;
+        display: flex;
+        margin-bottom: 40px;
+
+    }
+    &__item-img{
+        width: 145px;
+        height: 90px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 40px;
+    }
+    &__box{
+        text-align: center;
+    }
+    &__btn{
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+        padding: 16px 57px 14px;  
+    }
+}
+    
+
+.order{
+    &__title{
+        max-width: 361px;
+        padding-top: 33px;
+        margin-bottom: 50px;
+    }
+    &__inner{
+        display: flex;
+        
+    }
+    &__item{
+        max-width: 450px;
+         padding-left: 74px; 
+         position: relative;
+         & + .order__item{
+             margin-left: 130px;
+         }
+         &::before{
+             content: '';
+             position: absolute;
+             
+             width: 50px;
+             height: 50px;
+             top: 0;
+             left: 0;
+         }
+    }
+    &__item--phone{
+        &::before{
+            background-image: url('../images/icons/phone.svg');
+        }
+    }
+    &__item--user{
+        .order__text{
+            max-width: 367px;
+        }
+        &::before{
+            background-image: url('../images/icons/user.svg');
+        }
+    }
+    &__text{
+        max-width: 375px;
+        margin-bottom: 20px;
+    }
+    &__phone{
+        font-size: 30px;
+        line-height: 30px;
+        font-family: "GraphikLCG-Bold";
+        font-weight: 700;
+    }
+    &__btn{
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+        padding: 10px 65px;
+    }
+
+}
+
+
+.address{
+    &__inner{
+        padding-top: 50px;
+    }
+    &__title{
+        margin-bottom: 25px;
+    }
+    &__descr{
+        max-width: 512px;
+        margin-bottom: 50px;
+    }
+    &__items{
+        display: flex;
+    }
+    &__item{
+        max-width: 326px;
+        padding-left: 72px;
+        position: relative;
+        &+ .address__item{
+            margin-left: 53px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/marker.svg');
+            width: 50px;
+            height: 50px;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__text{
+        max-width: 254px;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        font-size: 14px;
+        text-align: center;
+        background-color: #fff;
+        color: $blue;
+        padding: 10px 24px 8px;
+        border: 2px solid #1A96F0;
+
+        border-radius: 10px;
+    }
+}

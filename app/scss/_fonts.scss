@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "GraphikLCG-Bold";
+    src: local("GraphikLCG-Bold"),
+     url("../fonts/GraphikLCG-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "GraphikLCG-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("GraphikLCG-Regular"),
+         url("../fonts/GraphikLCG-Regular.ttf") format("woff2");
+
+  }
