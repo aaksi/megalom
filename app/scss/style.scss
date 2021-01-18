@@ -316,3 +316,208 @@
         border-radius: 10px;
     }
 }
+
+
+.questions{
+    min-height: 612px;
+    padding-bottom: 59px;
+    &__inner{
+        padding-top: 58px;
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__accordion{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    &__accordion-item{
+        margin-bottom: 22px;
+        transition: all 0.5s;
+    }
+    &__accordion-item--active{
+        .questions__accordion-descr{
+            display: block;
+           
+        }
+        .questions__accordion-title{
+            color: $blue;
+            transition: all 0.5s;
+            &::after{
+
+                background-image: url('../images/icons/arrow-top.svg');
+                transition: all 0.2s;
+            }
+        }
+    }
+    &__accordion-title{
+        line-height: 20px;
+        margin-bottom: 16px;
+        cursor: pointer;
+        transition: all 0.2s;
+        position: relative;
+        padding-right: 36px;
+        display: inline-block;
+        &:hover{
+            color: $blue;  
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/arrow-bottom.svg');
+            width: 15px;
+            height: 9px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s;
+        }
+    }
+    &__accordion-descr{
+        padding: 15px 20px;
+        color: #4E4E4E;
+        background-color:#EFF0F1;
+        border-radius: 10px;
+        max-width: 700px;
+        display: none;
+        transition: all 0.5s;
+    }
+    &__box{
+        text-align: center;
+    }
+    &__btn{
+        font-size: 18px;
+        line-height: 35px;
+        padding: 16px 74px 14px;
+    }
+}
+
+
+.info{
+
+    &__inner{
+        padding-top: 50px;
+    }
+    &__title{
+        max-width: 537px;
+        margin-bottom: 45px;
+    }
+    &__descr{
+        max-width: 556px;
+    }
+    &__btn{
+        color: $blue;
+        background-color: #fff;
+        border-radius: 10px;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 14px 8px;
+        margin-bottom: 60px;
+    }
+}
+
+.copy{
+    min-height: 143px;
+    &__inner{
+        padding-top: 27px;
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 20px;
+        color: $grey;
+        p{
+            margin: 0;
+        }
+        a{
+            text-decoration: underline;
+            margin-left: 25px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+.popup{
+    max-width: 487px;
+    width: 100%;
+    border-radius: 10px;
+}
+.popup__wrapper{
+    padding: 28px 60px 40px;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    // margin: 0 auto;
+    form{
+        input,
+        textarea{
+            display: block;
+            width: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid #D3D3D3;
+            box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 0 18px;
+            color: #000;
+            font-size: 18px;
+            line-height: 34px;
+            &::placeholder{
+                font-size: 18px;
+                line-height: 34px;
+                color: #000;
+            
+            }
+            
+        }
+        input{
+            height: 55px;
+            margin-bottom: 20px;
+        }
+        textarea{
+            margin-bottom: 30px;
+            height: 100px;
+            padding-top: 10px;
+            &::placeholder{
+
+            }
+        }
+        button{
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            line-height: 35px;
+            background-color: $blue;
+            color: #FFFFFF;
+            border-radius: 10px;
+            border: none;
+            height: 65px;
+            margin-bottom: 15px;
+        }
+    }
+}
+.popup__title{
+    font-family: "GraphikLCG-Bold";
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+.popup__text{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $grey;
+}
+.fancybox-content{
+    padding: 0;
+}
+.fancybox-slide--html .fancybox-close-small{
+    background-image: url('../images/icons/close.svg');
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    right: 18px;
+}
