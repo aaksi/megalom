@@ -616,6 +616,9 @@
         height: 428px;
         object-fit: cover;
     }
+    &__descr{
+        max-width: 700px;
+    }
     &__slider-descr{
         font-size: 16px;
         line-height: 30px;
@@ -623,30 +626,27 @@
         color: $grey;
         margin-bottom: 0;
     }
-    &__descr{
-        max-width: 700px;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+        margin-left: 16px;
+        font-size: 0;
+        border: none;
     }
-    .slick-dots{
-        display: flex;
-        justify-content: center;
-        li{
-            margin-left: 16px;
-            font-size: 0;
-            border: none;
-        }
-        button{
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: none;
-            padding: 0;
-        }
+    button{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
     }
-    .slick-active{
-        button{
+}
+.slick-active{
+    button{
 
-            background-color: $blue;
-        }
+        background-color: $blue;
     }
 }
 
@@ -779,4 +779,146 @@
     .price__list{
         margin-bottom: 0;
     }
+}
+
+
+.company{
+    p{
+        margin-bottom: 35px;
+    }
+    &.border{
+        padding-bottom: 0;
+    }
+    &__inner{
+        padding-top: 8px;
+        max-width: 700px;
+    }
+    &__title{
+        line-height: 42px;
+        
+        span{
+            display: block;
+            font-size: 45px;
+            line-height: 54px;
+        }
+    }
+    &__slider{
+        margin-bottom: 45px;
+    }
+    &__slider-item{
+        max-width: 700px;
+    }
+    &__slider-img{
+        width: 700px;
+        height: 380px;
+        object-fit: cover;
+    }
+    &__slider-descr{
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: $grey;
+        margin-bottom: 0;
+    }
+    
+}
+
+.company-info{
+    &__title{
+        padding-top: 48px;
+        margin-bottom: 37px;
+    }
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 314px;
+        line-height: 22px;
+        display: flex;
+        span{
+            font-size: 45px;
+            line-height: 45px;
+            display: block;
+            margin-right: 24px;
+            font-family: "GraphikLCG-Bold";
+            font-weight: 700;
+        }
+    }
+    
+}
+.company{
+    .questions__accordion{
+        margin: 0;
+    }
+    .questions__title{
+        text-align-last: left;
+    }
+    .questions__btn{
+        margin-left: 160px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.contacts-page{
+    &__title{
+        font-size: 45px;
+        line-height: 54px;
+        margin-bottom: 36px;
+    }
+    &__inner{
+        max-width: 700px;
+    }
+    &__box{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: -50px;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
+    &__item{
+        // width: 50%;
+        flex-basis: calc(50% - 50px);
+        margin-left: 50px;
+        margin-bottom: 18px;
+        &-phone{
+            font-size: 25px;
+            line-height: 25px;
+            font-family: "GraphikLCG-Bold";
+            font-weight: 700;
+        }
+        &-mail{
+            font-size: 18px;
+            line-height: 34px;
+            color: $blue;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__item-title{
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+    }
+    &__map{
+        margin-bottom: 35px;
+        iframe{
+
+            max-width: 700px;
+            width: 100%;
+            height: 250px;
+        }
+    }
+    &__btn{
+        font-size: 18px;
+        line-height: 35px;
+        padding: 16px 73px 14px;
+    }
+
 }

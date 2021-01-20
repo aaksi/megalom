@@ -18,6 +18,11 @@ $(function(){
         prevArrow: false,
         nextArrow: false,
     });
+    $('.company__slider').slick({
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+    });
     
     
 });
