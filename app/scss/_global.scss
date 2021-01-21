@@ -25,6 +25,11 @@ h5,
 h6{
     margin: 0;
 }
+// html,
+// body{
+//     position: relative;
+//     overflow-x: hidden;
+// }
 body{
     font-family: "GraphikLCG-Regular" ;
     font-size: 20px;
@@ -48,6 +53,11 @@ body{
     color: #fff;
     background-color: #1A96F0;
     border-radius: 10px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $blue-active;
+        transition: all 0.3s;
+    }
 }
 .title{
     font-family: "GraphikLCG-Bold";
